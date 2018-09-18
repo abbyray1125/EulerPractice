@@ -1,7 +1,7 @@
 public class eulerpractice1{
 	public static void main(String args[]){
 
-		System.out.println(threeand5(1000));
+		System.out.println("the sum of teh multiples of 3 and 5 less than 1000 is = threeand5(1000));
 
 
 
@@ -22,6 +22,7 @@ public class eulerpractice1{
 		}
 		return toret;
 	}
+	
 	
 
 
