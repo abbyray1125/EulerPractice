@@ -7,28 +7,14 @@ public class eulerpractice2{
 		list.add(1);
 		list.add(2);
 		System.out.println(list);
-		System.out.println(getfibb(4000000,list));
+		System.out.println(String.format("%,d",getfibb(4000000,list)));
 
 
 
 	}
 
 	// takes in a upper bound and a toret and adds even fibbanaccci numbers below it
-/*
-	public static int addevenfibb(int num){
-		int toret=0;
 
-		for (int i=1;i<num;i=i){
-			if (___ %2==0){
-				//toret+=____
-			}
-		}
-}
-*/
-
-
-	
-// makes arraylist of fibbannacci numbers 
 	public static int getfibb(int upperbound, ArrayList<Integer> fibbnums){
 		int toret=2;
 		for(int i=2;fibbnums.get(i-2)+fibbnums.get(i-1)<upperbound;i++){
