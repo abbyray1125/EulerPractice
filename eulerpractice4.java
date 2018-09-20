@@ -8,7 +8,11 @@ public class eulerpractice4{
 
 	}
 
-	
+	//find largest palindrome number made form product of 3 digit numbers
+	public static int largepal(){
+		for ()
+
+	}
 
 	
 
