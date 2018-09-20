@@ -4,7 +4,7 @@ public class eulerpractice3{
 
 	
 		
-		System.out.println(String.format("%,d",largepfact(13195)));
+		System.out.println(largepfact(13195.0));
 
 		//600,851,475,143
 
@@ -14,9 +14,10 @@ public class eulerpractice3{
 	public static double largepfact(double num){
 		ArrayList<Double> factors=new ArrayList<Double>();
 		for (double i=2;i<Math.sqrt(num);i++){
-			if(num%i==0){
-				factors.add(i);
-				largepfact(num/i);
+			if(isprime(i)=true){
+				if(num%i==0){
+					factors.add(i);
+				}
 			}
 		}
 		double max=2;
@@ -26,8 +27,17 @@ public class eulerpractice3{
 			}
 		}
 		return max;
+	}
 
-
+//checks if number is prime
+	public static boolean isprime(double x){
+		boolean isprime=true;
+		for (double i=2;i<Math.sqrt(num);i++){
+			if (x%i==0){
+				isprime=false;
+			}
+		}	
+		return isprime;
 	}
 
 
