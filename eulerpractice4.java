@@ -3,7 +3,7 @@ public class eulerpractice4{
 	public static void main(String args[]){
 
 	
-		System.out.println(largepal);
+		System.out.println(largepal());
 
 
 	}
@@ -38,7 +38,6 @@ public class eulerpractice4{
 			}
 		}
 		return max;
-
 	}
 
 	
