@@ -4,7 +4,7 @@ public class eulerpractice7{
 
 	
 		
-		System.out.println(String.format("%,f",numprime(10001)));
+		System.out.println(String.format("%,d",numprime(10001)));
 
 		//600,851,475,143
 
@@ -13,19 +13,20 @@ public class eulerpractice7{
 // tells you teh indexth prime 
 	public static int numprime(int index){
 		int count=0;
-		int i=2;
+		int i=1;
 		while (count<index){
+			i++;
 			if (isprime(i)==true){
 				count++;
 			}
-			i++;
 		}
+		return i;
 	}
 
 //checks if number is prime
-	public static boolean isprime(double x){
+	public static boolean isprime(int x){
 		boolean isprime=true;
-		for (double i=2;i<Math.sqrt(x);i++){
+		for (int i=2;i<Math.sqrt(x);i++){
 			if (x%i==0){
 				isprime=false;
 			}
