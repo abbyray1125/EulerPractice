@@ -3,14 +3,14 @@ public class eulerpractice9{
 	public static void main(String args[]){
 
 	
-		SYtem.out.println(abc(1000))
+		System.out.println(abc());
 
 	}
-	public static int abc(int d){
-		for (int i=0;i<d;i++){
-			for(int j=0;j<d;j++){
-				for(int k=0;k<d;k++){
-					if(i*i+j*j==k*k&&i+j+k==d){
+	public static int abc(){
+		for (int i=1;i<1000;i++){
+			for(int j=1;j<1000;j++){
+				for(int k=1;k<1000;k++){
+					if((i*i)+(j*j)==(k*k)&&i+j+k==1000){
 						return i*j*k;
 					}
 				}
