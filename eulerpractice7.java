@@ -13,7 +13,7 @@ public class eulerpractice7{
 // tells you teh indexth prime 
 	public static int numprime(int index){
 		int count=0;
-		int i=1;
+		int i=2;
 		while (count<index){
 			i++;
 			if (isprime(i)==true){
@@ -26,7 +26,7 @@ public class eulerpractice7{
 //checks if number is prime
 	public static boolean isprime(int x){
 		boolean isprime=true;
-		for (int i=2;i<Math.sqrt(x);i++){
+		for (int i=2;i<x;i++){
 			if (x%i==0){
 				isprime=false;
 			}
